@@ -25,7 +25,7 @@ d3.json(link2,function(response){
     
 
     d3.json(link,function(data){
-    console.log(data);
+    // console.log(xxxx);
    
     function createCircleMarker(feature,latlng){
         let options = {
@@ -67,21 +67,21 @@ d3.json(link2,function(response){
       attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
       maxZoom: 18,
       id: "mapbox.satellite",
-      accessToken: config.API_KEY
+      accessToken: API_KEY
     });
   
     var grayscale = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
       attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
       maxZoom: 18,
       id: "mapbox.light",
-      accessToken: config.API_KEY
+      accessToken: API_KEY
     });
 
     var outdoors = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
       attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
       maxZoom: 18,
       id: "mapbox.outdoors",
-      accessToken: config.API_KEY
+      accessToken: API_KEY
     });
   
     // Define a baseMaps object to hold our base layers
